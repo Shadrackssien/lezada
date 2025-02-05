@@ -7,7 +7,7 @@ import Footer from "../components/Footer.vue";
 </script>
 
 <template>
-  <div class="w-full h-full">
+  <div class="w-full h-full overflow-x-hidden">
     <Navbar />
     <Hero />
     <Products />
