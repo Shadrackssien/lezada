@@ -48,7 +48,7 @@ const handleMouseLeave = () => {
 
 <template>
   <nav class="hidden lg:flex">
-    <ul class="flex gap-16">
+    <ul class="flex gap-15">
       <li
         v-for="(link, index) in links"
         :key="index"

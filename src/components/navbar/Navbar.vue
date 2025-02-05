@@ -1,8 +1,19 @@
 <script setup>
+import { ref } from "vue";
 import { Search, Profile, Favorite, Cart, Menu } from "../../components/icons";
 import logo from "../../assets/logo.png";
+import SlideModal from "../SlideModal.vue";
 
 import NavMenu from "./NavMenu.vue";
+import SearchOverlay from "./SearchOverlay.vue";
+
+const isSearchOpen = ref(false);
+const isFavoriteOpen = ref(false);
+const isCartOpen = ref(false);
+
+const toggleSearch = () => {
+  isSearchOpen.value = !isSearchOpen.value;
+};
 </script>
 
 <template>
@@ -25,21 +36,49 @@ import NavMenu from "./NavMenu.vue";
     <div>
       <ul class="flex gap-4 md:gap-6">
         <li class="hidden lg:flex">
-          <Search class="size-6 cursor-pointer" />
+          <div>
+            <Search @click="toggleSearch" class="size-6 cursor-pointer" />
+          </div>
         </li>
         <li class="hidden lg:flex">
           <Profile class="size-6 cursor-pointer" />
         </li>
         <li>
-          <Favorite class="size-6 cursor-pointer" />
+          <Favorite
+            @click="isFavoriteOpen = true"
+            class="size-6 cursor-pointer"
+          />
         </li>
         <li>
-          <Cart class="size-6 cursor-pointer" />
+          <Cart @click="isCartOpen = true" class="size-6 cursor-pointer" />
         </li>
+
+        <!-- Hamburger Menu for mobile -->
         <li class="flex lg:hidden">
           <Menu class="size-6 cursor-pointer" />
         </li>
       </ul>
     </div>
+
+    <!-- Search Overlay -->
+    <SearchOverlay :is-open="isSearchOpen" @close="isSearchOpen = false" />
+
+    <!-- WishList Modal -->
+    <SlideModal
+      :is-open="isFavoriteOpen"
+      title="Wishlist"
+      @close="isFavoriteOpen = false"
+    >
+      <div class="text-center text-gray-500 py-8">Your wishlist is empty</div>
+    </SlideModal>
+
+    <!-- Cart Modal -->
+    <SlideModal
+      :is-open="isCartOpen"
+      title="Shopping Cart"
+      @close="isCartOpen = false"
+    >
+      <div class="text-center text-gray-500 py-8">Your cart is empty</div>
+    </SlideModal>
   </div>
 </template>
