@@ -1,4 +1,8 @@
-<script setup></script>
+<script setup>
+import { useRoute } from "vue-router";
+
+const route = useRoute();
+</script>
 <template>
-  <div class="text-3xl bg-blue-100 text-blue-500 font-bold">Hello</div>
+  <router-view></router-view>
 </template>
