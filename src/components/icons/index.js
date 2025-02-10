@@ -9,6 +9,8 @@ import Twitter from "./Twitter.vue";
 import Facebook from "./Facebook.vue";
 import Instagram from "./Instagram.vue";
 import Youtube from "./Youtube.vue";
+import ArrowLeft from "./ArrowLeft.vue";
+import ArrowRight from "./ArrowRight.vue";
 
 export {
   ArrowDown,
@@ -22,4 +24,6 @@ export {
   Facebook,
   Instagram,
   Youtube,
+  ArrowLeft,
+  ArrowRight,
 };

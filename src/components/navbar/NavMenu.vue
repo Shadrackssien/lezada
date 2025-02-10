@@ -48,7 +48,7 @@ const handleMouseLeave = () => {
 
 <template>
   <nav class="hidden lg:flex">
-    <ul class="flex gap-15">
+    <ul class="flex gap-[52px]">
       <li
         v-for="(link, index) in links"
         :key="index"
@@ -82,7 +82,7 @@ const handleMouseLeave = () => {
               ? 'group-hover:opacity-100 group-hover:translate-y-0'
               : 'opacity-0 pointer-events-none'
           "
-          class="absolute left-[50%] top-full bg-white shadow-lg min-w-[1200px] opacity-0 transform translate-x-[-28%] translate-y-10 scale-y-100 origin-bottom transition-all duration-500 ease-in-out"
+          class="absolute left-[50%] top-full z-50 bg-white shadow-lg min-w-[1170px] opacity-0 transform translate-x-[-29%] translate-y-10 scale-y-100 origin-bottom transition-all duration-500 ease-in-out"
         >
           <HomeMenu />
         </div>
@@ -97,7 +97,7 @@ const handleMouseLeave = () => {
               ? 'group-hover:opacity-100 group-hover:translate-y-0'
               : 'opacity-0 pointer-events-none'
           "
-          class="absolute left-0 top-full bg-white shadow-lg min-w-[1120px] opacity-0 transform translate-x-[-35%] translate-y-10 scale-y-100 origin-bottom transition-all duration-500 ease-in-out"
+          class="absolute left-0 top-full z-50 bg-white shadow-lg min-w-[1100px] opacity-0 transform translate-x-[-35.5%] translate-y-10 scale-y-100 origin-bottom transition-all duration-500 ease-in-out"
         >
           <ShopMenu />
         </div>
@@ -112,7 +112,7 @@ const handleMouseLeave = () => {
               ? 'group-hover:opacity-100 group-hover:translate-y-0'
               : 'opacity-0 pointer-events-none'
           "
-          class="absolute left-[50%] top-full bg-white shadow-lg min-w-[1200px] opacity-0 transform translate-x-[-50%] translate-y-10 scale-y-100 origin-bottom transition-all duration-500 ease-in-out"
+          class="absolute left-[50%] top-full z-50 bg-white shadow-lg min-w-[1170px] opacity-0 transform translate-x-[-49%] translate-y-10 scale-y-100 origin-bottom transition-all duration-500 ease-in-out"
         >
           <ElementsMenu />
         </div>
@@ -127,7 +127,7 @@ const handleMouseLeave = () => {
               ? 'group-hover:opacity-100 group-hover:translate-y-0'
               : 'opacity-0 pointer-events-none'
           "
-          class="absolute left-0 top-full bg-white shadow-lg min-w-[250px] opacity-0 transform translate-y-10 scale-y-100 origin-bottom transition-all duration-500 ease-in-out"
+          class="absolute left-0 top-full z-50 bg-white shadow-lg min-w-[250px] opacity-0 transform translate-y-10 scale-y-100 origin-bottom transition-all duration-500 ease-in-out"
         >
           <PagesMenu />
         </div>
@@ -142,7 +142,7 @@ const handleMouseLeave = () => {
               ? 'group-hover:opacity-100 group-hover:translate-y-0'
               : 'opacity-0 pointer-events-none'
           "
-          class="absolute left-0 top-full bg-white shadow-lg min-w-[250px] opacity-0 transform translate-y-10 scale-y-100 origin-bottom transition-all duration-500 ease-in-out"
+          class="absolute left-0 top-full z-50 bg-white shadow-lg min-w-[250px] opacity-0 transform translate-y-10 scale-y-100 origin-bottom transition-all duration-500 ease-in-out"
         >
           <BlogMenu />
         </div>

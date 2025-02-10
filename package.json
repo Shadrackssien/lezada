@@ -9,14 +9,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@primevue/themes": "^4.2.5",
     "@tailwindcss/vite": "^4.0.0",
     "axios": "^1.7.9",
     "gsap": "^3.12.7",
     "pinia": "^2.3.1",
+    "primevue": "^4.2.5",
+    "swiper": "^11.2.2",
     "typeface-work-sans": "^1.1.13",
     "vue": "^3.5.13",
     "vue-axios": "^3.5.2",
     "vue-router": "^4.5.0",
+    "vue3-carousel": "^0.14.0",
     "vuex": "^4.1.0"
   },
   "devDependencies": {

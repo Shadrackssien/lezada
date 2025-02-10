@@ -36,7 +36,7 @@ const handleClose = () => {
   <!-- Backdrop -->
   <div
     v-show="showModal"
-    class="fixed inset-0 bg-black/20"
+    class="fixed inset-0 bg-black/20 z-50"
     @click="handleClose"
   >
     <!-- Modal -->
@@ -54,7 +54,9 @@ const handleClose = () => {
         @click.stop
       >
         <!-- Header -->
-        <div class="flex items-center justify-between p-4 border-b">
+        <div
+          class="flex items-center justify-between p-4 border-b border-b-gray-400"
+        >
           <h2 class="text-lg font-medium">{{ title }}</h2>
           <button
             @click="handleClose"

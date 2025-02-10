@@ -18,7 +18,7 @@ const toggleSearch = () => {
 
 <template>
   <div
-    class="flex items-center justify-between w-full px-3 md:px-8 lg:px-12 py-[28px] lg:py-0 border-b-2 border-b-gray-200"
+    class="flex items-center justify-between w-full px-3 md:px-8 lg:px-12 py-[28px] lg:py-0"
   >
     <!-- Logo -->
     <div>
@@ -34,23 +34,23 @@ const toggleSearch = () => {
 
     <!-- Search, Account, Carts etc -->
     <div>
-      <ul class="flex gap-4 md:gap-6">
+      <ul class="flex gap-4 md:gap-[30px]">
         <li class="hidden lg:flex">
           <div>
-            <Search @click="toggleSearch" class="size-6 cursor-pointer" />
+            <Search @click="toggleSearch" class="size-5 cursor-pointer" />
           </div>
         </li>
         <li class="hidden lg:flex">
-          <Profile class="size-6 cursor-pointer" />
+          <Profile class="size-5 cursor-pointer" />
         </li>
         <li>
           <Favorite
             @click="isFavoriteOpen = true"
-            class="size-6 cursor-pointer"
+            class="size-5 cursor-pointer"
           />
         </li>
         <li>
-          <Cart @click="isCartOpen = true" class="size-6 cursor-pointer" />
+          <Cart @click="isCartOpen = true" class="size-5 cursor-pointer" />
         </li>
 
         <!-- Hamburger Menu for mobile -->

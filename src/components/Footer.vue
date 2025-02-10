@@ -4,9 +4,9 @@ import visa from "../assets/visa.png";
 </script>
 
 <template>
-  <div class="w-full h-auto mt-16 bg-[#f8f8f8] px-3 md:px-8 lg:px-0">
+  <div class="w-full h-auto mt-8 bg-[#f8f8f8] px-3 md:px-8 lg:px-0">
     <div
-      class="w-[1200px] mx-auto py-20 flex flex-col gap-10 lg:gap-0 lg:flex-row lg:justify-between"
+      class="w-[1200px] mx-auto py-24 flex flex-col gap-10 lg:gap-0 lg:flex-row lg:justify-between"
     >
       <div class="text-[#777] space-y-6">
         <div
