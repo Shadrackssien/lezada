@@ -11,6 +11,7 @@ import Instagram from "./Instagram.vue";
 import Youtube from "./Youtube.vue";
 import ArrowLeft from "./ArrowLeft.vue";
 import ArrowRight from "./ArrowRight.vue";
+import Compare from "./Compare.vue";
 
 export {
   ArrowDown,
@@ -26,4 +27,5 @@ export {
   Youtube,
   ArrowLeft,
   ArrowRight,
+  Compare,
 };
