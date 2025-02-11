@@ -20,7 +20,9 @@ import flashsale from "../assets/flashsale.jpg";
           Up To 40% Off Final Sale Items. Caught in the moment!
         </p>
       </div>
-      <button class="bg-[#333] text-white py-3 px-10 font-semibold">
+      <button
+        class="inline-block text-xs font-medium tracking-wider uppercase text-white bg-[#333] px-12 py-3 border border-gray-800 hover:bg-transparent hover:text-black transition-all duration-300"
+      >
         SHOP NOW
       </button>
     </div>
