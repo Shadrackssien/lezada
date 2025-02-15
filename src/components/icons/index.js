@@ -12,6 +12,11 @@ import Youtube from "./Youtube.vue";
 import ArrowLeft from "./ArrowLeft.vue";
 import ArrowRight from "./ArrowRight.vue";
 import Compare from "./Compare.vue";
+import RightDirection from "./RightDirection.vue";
+import ListView from "./ListView.vue";
+import FullGridView from "./FullGridView.vue";
+import SemiGridView from "./SemiGridView.vue";
+import Filter from "./Filter.vue";
 
 export {
   ArrowDown,
@@ -28,4 +33,9 @@ export {
   ArrowLeft,
   ArrowRight,
   Compare,
+  RightDirection,
+  ListView,
+  FullGridView,
+  SemiGridView,
+  Filter,
 };

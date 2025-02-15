@@ -18,8 +18,8 @@ const products = [
 
 <template>
   <div class="w-full h-full z-10">
-    <div class="">
-      <div class="relative">
+    <div class="flex gap-8">
+      <div class="relative w-1/2">
         <img
           :src="products[0].image"
           :alt="products[0].title"
@@ -40,7 +40,8 @@ const products = [
           {{ products[0].categories }}
         </span>
       </div>
-      <div class="my-4">
+
+      <div class="my-4 w-1/2">
         <p class="text-base text-[#333]">
           {{ products[0].description }}
         </p>

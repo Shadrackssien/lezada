@@ -43,7 +43,7 @@ const slides = ref([
 
 <template>
   <div
-    class="w-full h-[369px] relative mb-72 z-0"
+    class="w-full h-full relative z-0"
     @mouseenter="isHovered = true"
     @mouseleave="isHovered = false"
   >
