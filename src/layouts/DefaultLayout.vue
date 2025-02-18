@@ -2,16 +2,14 @@
 import Navbar from "../components/navbar/Navbar2.vue";
 import Footer2 from "../components/Footer2.vue";
 
-const props = defineProps({
-  title: {
-    type: String,
-    required: true,
-  },
-  backgroundImage: {
-    type: String,
-    required: true,
-  },
-});
+import { computed } from "vue";
+import { useRoute } from "vue-router";
+
+const route = useRoute();
+
+const title = computed(() => route.meta.title);
+
+const backgroundImage = computed(() => route.meta.backgroundImage);
 </script>
 <template>
   <div>
