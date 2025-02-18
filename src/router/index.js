@@ -18,6 +18,9 @@ import {
   Wishlist,
 } from "../pages";
 
+import headerOne from "../assets/header-one.png";
+import headerTwo from "../assets/header-two.jpg";
+
 const routes = [
   {
     path: "/",
