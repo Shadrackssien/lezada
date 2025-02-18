@@ -23,7 +23,7 @@
             <p>Full width</p>
             <p>Full Width Right Thumb</p>
             <p>Sticky Details</p>
-            <p>Shopping Cart</p>
+            <router-link to="/cart">Shopping Cart</router-link>
             <p>Wishlist</p>
             <p>Compare</p>
           </div>

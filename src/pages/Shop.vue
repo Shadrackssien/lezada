@@ -1,4 +1,6 @@
 <script setup>
+import { ref } from "vue";
+
 import Layout from "../layouts/Layout.vue";
 import header from "../assets/header-one.png";
 import LeftSidebar from "../components/LeftSidebar.vue";
@@ -10,6 +12,18 @@ import {
   Filter,
 } from "../components/icons";
 import ListProduct from "../components/ListProduct.vue";
+
+const views = ref([
+  { component: SemiGridView, type: "SemiGridView" },
+  { component: FullGridView, type: "FullGridView" },
+  { component: ListView, type: "ListView" },
+]);
+
+const selectedView = ref("FullGridView");
+
+const handleToggle = (viewType) => {
+  selectedView.value = viewType;
+};
 </script>
 <template>
   <div>
@@ -31,15 +45,16 @@ import ListProduct from "../components/ListProduct.vue";
                 <option value="">Price: Low to High</option>
               </select>
             </div>
-            <div>
-              <semi-grid-view class="size-5" />
+            <div
+              v-for="(view, index) in views"
+              :key="index"
+              class="cursor-pointer hover:text-black transition-all duration-300 ease-in-out"
+              :class="{ 'text-black': selectedView === view.type }"
+              @click="handleToggle(view.type)"
+            >
+              <component :is="view.component" class="size-6" />
             </div>
-            <div>
-              <full-grid-view class="size-6" />
-            </div>
-            <div>
-              <list-view class="size-6" />
-            </div>
+
             <div class="flex items-center gap-1 pl-6">
               <Filter class="size-4" />
               <p>Filter</p>
@@ -56,7 +71,7 @@ import ListProduct from "../components/ListProduct.vue";
             </div>
 
             <!-- Grid Cols 3/ SemiGridView -->
-            <div v-if="false" class="w-[75%]">
+            <div v-if="selectedView === views[0].type" class="w-[75%]">
               <div class="grid grid-cols-3 gap-4">
                 <single-product />
                 <single-product />
@@ -68,7 +83,7 @@ import ListProduct from "../components/ListProduct.vue";
             </div>
 
             <!-- Grid Cols 4/ fullGridView -->
-            <div v-if="false" class="w-[75%]">
+            <div v-if="selectedView === views[1].type" class="w-[75%]">
               <div class="grid grid-cols-4 gap-4">
                 <single-product />
                 <single-product />
@@ -82,7 +97,7 @@ import ListProduct from "../components/ListProduct.vue";
             </div>
 
             <!-- List View -->
-            <div v-if="true" class="w-[75%]">
+            <div v-if="selectedView === views[2].type" class="w-[75%]">
               <div class="grid grid-cols-1 gap-4">
                 <ListProduct />
               </div>
