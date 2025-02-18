@@ -4,6 +4,7 @@ import Hero from "../components/Hero.vue";
 import Products from "../components/Products.vue";
 import FlashSale from "../components/FlashSale.vue";
 import Footer from "../components/Footer.vue";
+import ScrollTopButton from "../components/ScrollTopButton.vue";
 </script>
 
 <template>
@@ -13,5 +14,6 @@ import Footer from "../components/Footer.vue";
     <Products />
     <FlashSale />
     <Footer />
+    <ScrollTopButton />
   </div>
 </template>

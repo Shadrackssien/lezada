@@ -18,6 +18,7 @@ import FullGridView from "./FullGridView.vue";
 import SemiGridView from "./SemiGridView.vue";
 import Filter from "./Filter.vue";
 import ShoppingCart from "./ShoppingCart.vue";
+import ArrowUp from "./ArrowUp.vue";
 
 export {
   ArrowDown,
@@ -40,4 +41,5 @@ export {
   SemiGridView,
   Filter,
   ShoppingCart,
+  ArrowUp,
 };
