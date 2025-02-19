@@ -22,10 +22,10 @@
             <p>Basic</p>
             <p>Full width</p>
             <p>Full Width Right Thumb</p>
-            <p>Sticky Details</p>
+            <router-link to="/product-details">Sticky Details</router-link>
             <router-link to="/cart">Shopping Cart</router-link>
-            <p>Wishlist</p>
-            <p>Compare</p>
+            <router-link to="/wishlist">Wishlist</router-link>
+            <router-link to="/compare">Compare</router-link>
           </div>
         </div>
       </div>
@@ -33,11 +33,11 @@
         <div class="flex flex-col gap-4">
           <h2 class="text-[#333] font-semibold">Shop Pages</h2>
           <div class="flex flex-col gap-2 text-[#7e7e7e]">
-            <p>Checkout</p>
-            <p>Order Tracking</p>
-            <p>My Account</p>
-            <p>Login</p>
-            <p>Register</p>
+            <router-link to="/checkout">Checkout</router-link>
+            <router-link to="/order-tracking">Order Tracking</router-link>
+            <router-link to="/account">My Account</router-link>
+            <router-link to="/login">Login</router-link>
+            <router-link to="/signup">Register</router-link>
           </div>
         </div>
       </div>

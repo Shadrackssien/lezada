@@ -70,7 +70,7 @@ const slides = ref([
         <swiper-slide
           v-for="slide in slides"
           :key="slide.id"
-          class="relative z-10 px-[10.8rem] h-full"
+          class="relative z-10 px-4 md:px-8 lg:px-[10.8rem] h-full"
         >
           <div class="relative w-full h-full">
             <img
@@ -79,32 +79,32 @@ const slides = ref([
               :alt="slide.title"
             />
             <div
-              class="absolute inset-0 flex flex-col justify-center items-start px-[70px]"
+              class="absolute inset-0 flex flex-col justify-center items-start px-8 md:px-[70px]"
             >
               <h2
-                class="text-[#68aaeb] text-sm font-bold tracking-[0.3em] mb-5 transition-transform duration-500"
+                class="text-[#68aaeb] text-xs md:text-sm font-bold tracking-[0.3em] mb-0 md:mb-5 transition-transform duration-500"
               >
                 {{ slide.category }}
               </h2>
               <h1
-                class="text-4xl leading-[1.5] font-bold w-80 tracking-[0.1em] text-gray-800 mb-8 transition-transform duration-500"
+                class="text-2xl md:text-4xl leading-[1.5] font-bold w-80 tracking-wide md:tracking-[0.1em] text-gray-800 mb-2.5 md:mb-8 transition-transform duration-500"
               >
                 {{ slide.title }}, <br />
                 {{ slide.subtitle }}
               </h1>
-              <a
-                class="inline-block text-xs font-medium tracking-wider uppercase text-white bg-[#333] px-12 py-3 border border-gray-800 hover:bg-transparent hover:text-black transition-all duration-300"
-                href="#"
+              <router-link
+                class="inline-block text-xs font-medium tracking-wider uppercase text-white bg-[#333] px-5 md:px-12 py-3 border border-gray-800 hover:bg-transparent hover:text-black transition-all duration-300"
+                to="/shop"
               >
                 shop now
-              </a>
+              </router-link>
             </div>
           </div>
         </swiper-slide>
 
         <button
           type="button"
-          class="swiper-button-prev pl-12 ht-swiper-button-nav prev-hero-swiper-one"
+          class="swiper-button-prev pl-8 md:pl-12 ht-swiper-button-nav prev-hero-swiper-one"
           :class="{ 'opacity-0': !isHovered }"
         >
           <ArrowLeft />
@@ -112,7 +112,7 @@ const slides = ref([
 
         <button
           type="button"
-          class="swiper-button-next pr-12 ht-swiper-button-nav next-hero-swiper-one"
+          class="swiper-button-next pr-8 md:pr-12 ht-swiper-button-nav next-hero-swiper-one"
           :class="{ 'opacity-0': !isHovered }"
         >
           <ArrowRight />

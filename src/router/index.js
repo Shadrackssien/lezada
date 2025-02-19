@@ -101,7 +101,7 @@ const routes = [
     },
   },
   {
-    path: "/my-account",
+    path: "/account",
     name: "my account",
     component: MyAccount,
     meta: {

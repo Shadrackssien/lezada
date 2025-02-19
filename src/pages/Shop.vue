@@ -28,11 +28,11 @@ const handleToggle = (viewType) => {
   <div>
     <div>
       <div
-        class="max-w-[1200px] text-[#7e7e7e] mx-auto py-4 flex justify-between"
+        class="max-w-[1200px] mx-auto text-[#7e7e7e] py-4 flex justify-between"
       >
         <div>Showing 20 of 73 result</div>
-        <div class="flex items-center gap-5">
-          <div class="pr-6">
+        <div class="flex items-center gap-3">
+          <div class="pr-10">
             <select class="border-b-[2px] border-b-gray-300 pb-1" name="" id="">
               <option value="">Default</option>
               <option value="">Price - High to Low</option>
@@ -57,7 +57,10 @@ const handleToggle = (viewType) => {
       </div>
       <p class="w-full h-[1px] bg-gray-300"></p>
 
-      <div class="max-w-[1200px] mx-auto pt-16 pb-40">
+      <!-- Filter -->
+      <div></div>
+
+      <div class="max-w-[1200px] mx-auto pt-32 pb-40">
         <div class="flex">
           <!-- Left Sidebar -->
           <div class="w-[25%]">
@@ -79,6 +82,14 @@ const handleToggle = (viewType) => {
           <!-- Grid Cols 4/ fullGridView -->
           <div v-if="selectedView === views[1].type" class="w-[75%]">
             <div class="grid grid-cols-4 gap-4">
+              <single-product />
+              <single-product />
+              <single-product />
+              <single-product />
+              <single-product />
+              <single-product />
+              <single-product />
+              <single-product />
               <single-product />
               <single-product />
               <single-product />
