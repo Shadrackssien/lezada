@@ -8,7 +8,7 @@ import ScrollTopButton from "../components/ScrollTopButton.vue";
 </script>
 
 <template>
-  <div class="w-full h-full overflow-x-hidden">
+  <div class="w-full z-10 h-full overflow-x-hidden">
     <Navbar />
     <Hero />
     <Products />

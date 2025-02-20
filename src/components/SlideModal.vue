@@ -36,7 +36,7 @@ const handleClose = () => {
   <!-- Backdrop -->
   <div
     v-show="showModal"
-    class="fixed inset-0 bg-black/20 z-50"
+    class="fixed inset-0 bg-black/20 z-[60]"
     @click="handleClose"
   >
     <!-- Modal -->
@@ -50,7 +50,7 @@ const handleClose = () => {
     >
       <div
         v-if="isOpen"
-        class="fixed top-0 right-0 w-[25%] h-full bg-white z-50 shadow-lg"
+        class="fixed top-0 right-0 w-[25%] h-full bg-white z-[61] shadow-lg"
         @click.stop
       >
         <!-- Header -->

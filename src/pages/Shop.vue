@@ -2,15 +2,18 @@
 import { ref } from "vue";
 
 import header from "../assets/header-one.png";
-import LeftSidebar from "../components/LeftSidebar.vue";
-import SingleProduct from "../components/SingleProduct.vue";
+import {
+  SingleProduct,
+  LeftSidebar,
+  ListProduct,
+  ScrollTopButton,
+} from "../components";
 import {
   SemiGridView,
   FullGridView,
   ListView,
   Filter,
 } from "../components/icons";
-import ListProduct from "../components/ListProduct.vue";
 
 const views = [
   { component: SemiGridView, type: "SemiGridView" },
@@ -110,5 +113,6 @@ const handleToggle = (viewType) => {
         </div>
       </div>
     </div>
+    <scroll-top-button />
   </div>
 </template>

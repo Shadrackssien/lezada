@@ -1,6 +1,7 @@
 <script setup>
 import headerTwo from "../assets/header-two.jpg";
 
+import { ScrollTopButton } from "../components";
 import { ShoppingCart } from "../components/icons";
 </script>
 
@@ -17,4 +18,5 @@ import { ShoppingCart } from "../components/icons";
       </router-link>
     </div>
   </div>
+  <ScrollTopButton />
 </template>
